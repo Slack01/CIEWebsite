@@ -32,7 +32,7 @@
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!-- Favicons -->
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="../images/logo.png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
@@ -99,12 +99,12 @@
     <!-- START MENU WRAPPER -->
     <div id="menu-wrapper">
         <div class="container">
-            <div class="four columns">
+            <div class="six columns">
                 <div id="logo">
-                    <a href="./"><img src="../images/logo.png" alt="Logo" /></a>
+                    <a href="./"><img src="../images/logo_cie.png" alt="Center for Innovations in Education" width="180" /></a>
                 </div><!-- .logo -->
             </div><!-- four columns -->
-            <div class="twelve columns navigation">
+            <div class="ten columns navigation">
                 <div id="menu" class="fix-fish-menu">
                     <ul id="nav" class="sf-menu">
                         <li>@Html.ActionLink("Home", "Index", "Home")</li>
@@ -127,7 +127,7 @@
         <div class="btop-1px"></div>
         <div class="container">
             <div class="four columns copyright">
-                <img src="../images/logo-footer.png" alt="" />
+                <img src="../images/logo_cie.png" alt="Center for Innovations in Education" width="120px" />
                 <p class="last">                    
                 &copy; @DateTime.Now.Year - Center for Innovations in Education, a non-profit 501(c) 3 - IRS exemption EIN# 26-4365936.
                 
@@ -136,10 +136,12 @@
             <div class="twelve columns">
                 <div id="secondary-nav" class="clearfix">
                     <ul class="clearfix">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <ul id="nav" class="sf-menu">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Programs", "Programs", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        </ul> 
                     </ul>
                     <div class="gray-dash-3px"></div>
                 </div><!-- #secondary-nav -->
